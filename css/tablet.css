@@ -1,0 +1,86 @@
+/* Tablet */
+@media (min-width: 768px) and (max-width: 911px) {
+  #banner {
+    position: relative;
+    width: 100%;
+  }
+
+  #banner .name {
+    font-size: 20px;
+    position: absolute;
+  }
+
+  #banner .job {
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+  }
+
+  #nav-bar img {
+    display: none;
+  }
+  #nav-bar .container {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+  }
+  #nav-bar .grid-items:nth-child(3) {
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    grid-column: 3 / 4;
+  }
+  #nav-bar .grid-items:nth-child(4) {
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    grid-column: 4 / 5;
+  }
+
+  #nav-bar .grid-items {
+    padding: 28px 10px;
+  }
+
+  #target {
+    padding: 20px;
+  }
+
+  #personal-info {
+    padding: 20px;
+  }
+
+  #job-info .container {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  #certificate .container {
+    padding: 0;
+  }
+
+  #certificate .cert-info .cert-list {
+    padding: 10px 20px;
+    display: block;
+  }
+
+  #certificate .cert-info .cert-list:nth-child(2) {
+    border-left: 1px solid #aaa;
+  }
+
+  #certificate .cert-info .cert-list:nth-child(2) img {
+    border: none;
+  }
+
+  #project .container {
+    padding-left: 20px;
+  }
+
+  #project .container .pro-info {
+    gap: 20px !important;
+  }
+
+  #project .container .pro-info .pro-list div a h1 {
+    height: 66px;
+  }
+
+  #project .container .pro-info .pro-list table tr:first-child th:nth-child(1),
+  #project .container .pro-info .pro-list table tr:first-child th:nth-child(3) {
+    height: 252px;
+  }
+}
